@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 import { bookingHref } from "@/components/site/book-link"
 import { SectionHead } from "@/components/site/section-head"
@@ -81,16 +82,13 @@ export function Team() {
                   </ol>
                 </div>
 
-                <a
+                <Link
                   href={bookingHref({ staff: first.toLowerCase() })}
-                  target="_blank"
-                  rel="noopener"
                   className="type-header mt-auto inline-flex h-11 items-center justify-between rounded-[3px] border border-ink/40 px-4 text-[0.75rem] text-ink transition-colors duration-300 hover:border-stamp hover:bg-stamp hover:text-stamp-ink"
                 >
                   Book with {first}
                   <ArrowUpRight className="size-4" strokeWidth={2.25} aria-hidden />
-                  <span className="sr-only">(opens in a new tab)</span>
-                </a>
+                </Link>
               </div>
             </li>
           )

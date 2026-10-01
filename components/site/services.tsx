@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 import { bookingHref } from "@/components/site/book-link"
 import { SectionHead } from "@/components/site/section-head"
@@ -76,10 +77,8 @@ export function Services() {
             <ul>
               {services.map((service) => (
                 <li key={service.id} className="border-b border-rule last:border-b-0">
-                  <a
+                  <Link
                     href={bookingHref({ service: service.id })}
-                    target="_blank"
-                    rel="noopener"
                     className="group/row -mx-3 grid grid-cols-[1fr_auto] items-center gap-x-6 gap-y-3 rounded-[3px] px-3 py-5 transition-colors duration-300 hover:bg-stamp-wash focus-visible:bg-stamp-wash md:grid-cols-[minmax(0,1fr)_auto_7rem_2.75rem] md:py-6"
                   >
                     <span className="min-w-0">
@@ -105,8 +104,8 @@ export function Services() {
                     <span className="hidden size-11 items-center justify-center justify-self-end rounded-[3px] border border-rule-strong text-ink transition-[background-color,border-color,color] duration-300 group-hover/row:border-stamp group-hover/row:bg-stamp group-hover/row:text-stamp-ink md:flex">
                       <ArrowUpRight className="size-4" strokeWidth={2.25} aria-hidden />
                     </span>
-                    <span className="sr-only">Book {service.name} (opens in a new tab)</span>
-                  </a>
+                    <span className="sr-only">Book {service.name}</span>
+                  </Link>
                 </li>
               ))}
             </ul>

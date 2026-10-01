@@ -50,7 +50,8 @@ export const shop = {
     "Book a time that suits you, arrive, and hand the next hour over to us. No rush between clients, no upselling, and a price you know before you sit down.",
 
   booking: {
-    url: "https://example.com/book",
+    /** The built-in booking flow. Every Book button on the page leads here. */
+    url: "/book",
     label: "Book an appointment",
     shortLabel: "Book",
   },
