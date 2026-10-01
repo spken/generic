@@ -1,0 +1,238 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-archivo);
+  --font-heading: var(--font-display);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-ledger-mono);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+
+  /* Ledger world */
+  --color-paper: var(--paper);
+  --color-paper-deep: var(--paper-deep);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-meta: var(--ink-meta);
+  --color-rule: var(--rule);
+  --color-rule-strong: var(--rule-strong);
+  --color-stamp: var(--stamp);
+  --color-stamp-ink: var(--stamp-ink);
+  --color-stamp-deep: var(--stamp-deep);
+  --color-stamp-wash: var(--stamp-wash);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+
+  --ease-ink: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-stamp: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:root {
+  /* Paper, ink and ruling. Cool white ledger stock, never cream. */
+  --paper: #f3f5f7;
+  --paper-deep: #e6e9ee;
+  --ink: #15171a;
+  --ink-soft: #454a52;
+  --ink-meta: #62686f;
+  --rule: #e1e6ec;
+  --rule-strong: #c9d2dc;
+  --hatch: #d3d8de;
+
+  /* Stamp ink: overridden per shop from content/shop.ts */
+  --stamp: #2f4775;
+  --stamp-ink: #ffffff;
+  --stamp-deep: color-mix(in oklab, var(--stamp), #000 24%);
+  --stamp-wash: color-mix(in oklab, var(--stamp), var(--paper) 87%);
+
+  /* One grout: the ledger line height that every ruled surface shares */
+  --line: 2rem;
+  /* Paper showing through a rubber-stamp impression, laid over stamp-ink fills */
+  --stamp-speckle: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='s'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.953 0 0 0 0 0.961 0 0 0 0 0.969 3.4 0 0 0 -2.55'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23s)'/%3E%3C/svg%3E");
+  /* Rubber-stamp ink grain, used as a mask on stamped marks */
+  --stamp-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3.2 0 0 0 2.75'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --gutter: clamp(1rem, 4vw, 3rem);
+
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --card: var(--paper);
+  --card-foreground: var(--ink);
+  --popover: var(--paper);
+  --popover-foreground: var(--ink);
+  --primary: var(--stamp);
+  --primary-foreground: var(--stamp-ink);
+  --secondary: var(--paper-deep);
+  --secondary-foreground: var(--ink);
+  --muted: var(--paper-deep);
+  --muted-foreground: var(--ink-soft);
+  --accent: var(--stamp-wash);
+  --accent-foreground: var(--ink);
+  --destructive: #b3261e;
+  --border: var(--rule);
+  --input: var(--rule-strong);
+  --ring: var(--stamp);
+  --radius: 0.25rem;
+
+  color-scheme: light;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    -webkit-tap-highlight-color: transparent;
+    scrollbar-color: var(--rule-strong) var(--paper);
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "ss01", "tnum" 0;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: var(--stamp);
+    color: var(--stamp-ink);
+  }
+  input,
+  textarea {
+    caret-color: var(--stamp);
+  }
+  :focus-visible {
+    outline: 2px solid var(--stamp);
+    outline-offset: 3px;
+  }
+  a {
+    text-underline-offset: 0.22em;
+    text-decoration-thickness: 1px;
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@layer utilities {
+  /* Headings: Inter Tight, sentence case, semibold, tight tracking */
+  .type-ledger {
+    font-family: var(--font-display), system-ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.035em;
+    line-height: 1;
+  }
+  .type-header {
+    font-stretch: 78%;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .type-figure {
+    font-family: var(--font-ledger-mono), ui-monospace, monospace;
+    letter-spacing: -0.02em;
+    font-variant-numeric: tabular-nums lining-nums;
+    font-feature-settings: "tnum", "lnum";
+  }
+
+  /* Ruled ledger paper */
+  .ruled {
+    background-image: linear-gradient(to bottom, transparent calc(var(--line) - 1px), var(--rule) calc(var(--line) - 1px));
+    background-size: 100% var(--line);
+  }
+
+  /* Graphite hatching: closed or unavailable time */
+  .hatch {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      var(--hatch) 0 1px,
+      transparent 1px 7px
+    );
+  }
+
+  /* Rubber-stamp impression: paper speckle over a stamp-ink fill */
+  .stamp-impression {
+    background-image: var(--stamp-speckle);
+    background-size: 160px;
+  }
+  /* A drop of ink running down a rule: hints there is more below the fold */
+  .scroll-cue {
+    transform: translateY(-100%);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .scroll-cue {
+      animation: scroll-cue 2.4s var(--ease-ink) infinite;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .scroll-cue {
+      transform: translateY(75%);
+    }
+  }
+}
+
+@keyframes scroll-cue {
+  0% {
+    transform: translateY(-100%);
+  }
+  70%,
+  100% {
+    transform: translateY(250%);
+  }
+}
+
+@keyframes now-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in oklab, var(--stamp), transparent 55%);
+  }
+  50% {
+    box-shadow: 0 0 0 6px color-mix(in oklab, var(--stamp), transparent 100%);
+  }
+}
+
+@keyframes stamp-in {
+  0% {
+    opacity: 0;
+    transform: scale(1.35) rotate(-6deg);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(0.96) rotate(-2.5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(-3deg);
+  }
+}

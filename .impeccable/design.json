@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-29T00:00:00Z",
+  "title": "Design System: The Appointment Book",
+  "extensions": {
+    "colorMeta": {
+      "stamp": { "role": "primary", "displayName": "Stamp Ink", "canonical": "var(--stamp) from content/shop.ts theme.stamp; default oklch(46.9% 0.213 268)", "tonalRamp": ["oklch(15% 0.08 268)", "oklch(26% 0.14 268)", "oklch(37% 0.19 268)", "oklch(46.9% 0.213 268)", "oklch(58% 0.17 268)", "oklch(70% 0.11 268)", "oklch(83% 0.06 268)", "oklch(95% 0.02 268)"] },
+      "stamp-ink": { "role": "primary", "displayName": "Stamp Face", "canonical": "var(--stamp-ink) from content/shop.ts theme.stampInk", "tonalRamp": ["oklch(15% 0 0)", "oklch(26% 0 0)", "oklch(37% 0 0)", "oklch(48% 0 0)", "oklch(60% 0 0)", "oklch(72% 0 0)", "oklch(85% 0 0)", "oklch(100% 0 0)"] },
+      "stamp-deep": { "role": "primary", "displayName": "Pressed Stamp", "canonical": "color-mix(in oklab, var(--stamp), #000 24%)", "tonalRamp": ["oklch(15% 0.07 268)", "oklch(22% 0.1 268)", "oklch(29% 0.13 268)", "oklch(35.6% 0.16 268)", "oklch(48% 0.16 268)", "oklch(62% 0.12 268)", "oklch(78% 0.07 268)", "oklch(94% 0.02 268)"] },
+      "stamp-wash": { "role": "primary", "displayName": "Stamp Wash", "canonical": "color-mix(in oklab, var(--stamp), var(--paper) 91%)", "tonalRamp": ["oklch(15% 0.02 265)", "oklch(27% 0.02 265)", "oklch(40% 0.02 265)", "oklch(52% 0.02 265)", "oklch(65% 0.02 265)", "oklch(77% 0.02 265)", "oklch(86% 0.02 265)", "oklch(92.5% 0.02 265)"] },
+      "paper": { "role": "neutral", "displayName": "Ledger Paper", "canonical": "#f3f5f7", "tonalRamp": ["oklch(15% 0.004 250)", "oklch(27% 0.004 250)", "oklch(40% 0.004 250)", "oklch(52% 0.004 250)", "oklch(65% 0.004 250)", "oklch(78% 0.004 250)", "oklch(90% 0.004 250)", "oklch(97% 0.004 250)"] },
+      "paper-deep": { "role": "neutral", "displayName": "Index Paper", "canonical": "#e6e9ee", "tonalRamp": ["oklch(15% 0.007 261)", "oklch(27% 0.007 261)", "oklch(40% 0.007 261)", "oklch(52% 0.007 261)", "oklch(65% 0.007 261)", "oklch(78% 0.007 261)", "oklch(88% 0.007 261)", "oklch(93.3% 0.007 261)"] },
+      "ink": { "role": "neutral", "displayName": "Graphite Ink", "canonical": "#15171a", "tonalRamp": ["oklch(15% 0.007 258)", "oklch(20.4% 0.007 258)", "oklch(32% 0.007 258)", "oklch(45% 0.007 258)", "oklch(58% 0.007 258)", "oklch(70% 0.007 258)", "oklch(83% 0.007 258)", "oklch(95% 0.007 258)"] },
+      "ink-soft": { "role": "neutral", "displayName": "Soft Graphite", "canonical": "#454a52", "tonalRamp": ["oklch(15% 0.013 260)", "oklch(27% 0.013 260)", "oklch(40.5% 0.013 260)", "oklch(52% 0.013 260)", "oklch(65% 0.013 260)", "oklch(76% 0.013 260)", "oklch(86% 0.013 260)", "oklch(95% 0.013 260)"] },
+      "ink-meta": { "role": "neutral", "displayName": "Margin Note", "canonical": "#62686f", "tonalRamp": ["oklch(15% 0.012 255)", "oklch(27% 0.012 255)", "oklch(40% 0.012 255)", "oklch(51% 0.012 255)", "oklch(63% 0.012 255)", "oklch(75% 0.012 255)", "oklch(86% 0.012 255)", "oklch(95% 0.012 255)"] },
+      "rule": { "role": "neutral", "displayName": "Blue Ruling", "canonical": "#d3dde8", "tonalRamp": ["oklch(15% 0.02 250)", "oklch(27% 0.02 250)", "oklch(40% 0.02 250)", "oklch(52% 0.02 250)", "oklch(65% 0.02 250)", "oklch(78% 0.02 250)", "oklch(89% 0.02 250)", "oklch(96% 0.01 250)"] },
+      "rule-strong": { "role": "neutral", "displayName": "Strong Ruling", "canonical": "#9fb2c6", "tonalRamp": ["oklch(15% 0.03 250)", "oklch(27% 0.035 250)", "oklch(40% 0.036 250)", "oklch(52% 0.036 250)", "oklch(64% 0.036 250)", "oklch(75.6% 0.036 250)", "oklch(87% 0.025 250)", "oklch(95% 0.012 250)"] },
+      "hatch": { "role": "neutral", "displayName": "Graphite Hatch", "canonical": "#bfc5cc", "tonalRamp": ["oklch(15% 0.01 255)", "oklch(27% 0.01 255)", "oklch(40% 0.01 255)", "oklch(52% 0.01 255)", "oklch(65% 0.01 255)", "oklch(81% 0.01 255)", "oklch(89% 0.008 255)", "oklch(95% 0.005 255)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Ledger Display", "purpose": "Shop name in the hero, Visit heading, footer wordmark. Uppercase, Archivo width 68%." },
+      "headline": { "displayName": "Ledger Headline", "purpose": "Section heads under the double ink rule. Uppercase, width 68%." },
+      "title": { "displayName": "Ledger Title", "purpose": "'This week', team names, Visit sub-heads, header wordmark (1.75-2.25rem). Uppercase, width 68%." },
+      "lede": { "displayName": "Lede", "purpose": "The shop's one-line promise, max 22ch, width 92%." },
+      "item": { "displayName": "Item", "purpose": "Service names, policy questions, the Visit address." },
+      "body": { "displayName": "Body", "purpose": "Intros and section notes, 46-52ch, ink-soft." },
+      "body-sm": { "displayName": "Body Small", "purpose": "Service descriptions, team focus, card notes, max 58ch." },
+      "label": { "displayName": "Ledger Header", "purpose": "Buttons, index tabs, weekday heads, category rules, card field labels. Uppercase, width 78%, 0.6875-0.8125rem." },
+      "figure": { "displayName": "Book Figure", "purpose": "Every time, price, duration and date: tabular, lining mono." }
+    },
+    "shadows": [
+      { "name": "handed-over-card", "value": "0 2px 3px rgb(0 0 0 / 0.18), 0 28px 60px -18px rgb(0 0 0 / 0.55)", "purpose": "Appointment card only: the one object lifted off the book, on the stamp-filled Visit section." },
+      { "name": "now-pulse", "value": "0 0 0 0 -> 0 0 0 6px color-mix(in oklab, var(--stamp), transparent 55% -> 100%), 2.4s ease-out infinite", "purpose": "Live dot on the now-line and the open-status dot. A state signal, not elevation." },
+      { "name": "tab-seam", "value": "0 1px 0 var(--paper)", "purpose": "Active index tab covers the header rule so it joins the page below." }
+    ],
+    "motion": [
+      { "name": "ease-ink", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Ink being laid down: tab changes, now-line travel (1000ms), arrow nudges, book bar slide (500ms), card tilt (700ms)." },
+      { "name": "ease-stamp", "value": "cubic-bezier(0.22, 1, 0.36, 1)", "purpose": "Stamp press: button fill and press transform (300ms), stamp-in mark (700ms)." },
+      { "name": "ink-draw", "value": "scaleX(0 -> 1) from left, animation-timeline: view(), range entry 10% to cover 30%", "purpose": "Section-head rules draw themselves as they enter the viewport. Only under prefers-reduced-motion: no-preference and where view timelines are supported." },
+      { "name": "stamp-in", "value": "scale(1.35) rotate(-6deg) opacity 0 -> scale(0.96) rotate(-2.5deg) -> scale(1) rotate(-3deg), 700ms ease-stamp", "purpose": "OPEN / CLOSED status stamp pressing onto the week grid." },
+      { "name": "stamp-press", "value": "active: scale(0.965) rotate(-0.8deg), 300ms ease-stamp", "purpose": "Stamp buttons compress under the press." }
+    ],
+    "breakpoints": [
+      { "name": "xs", "value": "400px" },
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Stamp Button",
+      "kind": "button",
+      "refersTo": "button-stamp",
+      "description": "The primary Book action everywhere: flat stamp ink with paper speckle, pressed on click.",
+      "html": "<a class=\"ds-btn-stamp\" href=\"#\"><span>Book an appointment</span><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></a>",
+      "css": ".ds-btn-stamp { display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 20px; border-radius: 3px; border: 1px solid transparent; background-color: var(--stamp, #2b45cf); background-image: var(--stamp-speckle, none); background-size: 160px; color: var(--stamp-ink, #fff); font-family: Archivo, system-ui, sans-serif; font-stretch: 78%; font-weight: 700; font-size: 0.8125rem; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; white-space: nowrap; transition: background-color 300ms cubic-bezier(0.22, 1, 0.36, 1), transform 300ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn-stamp svg { transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-stamp:hover { background-color: var(--stamp-deep, #1a2d8f); } .ds-btn-stamp:hover svg { transform: translate(2px, -2px); } .ds-btn-stamp:active { transform: scale(0.965) rotate(-0.8deg); } .ds-btn-stamp:focus-visible { outline: 2px solid var(--stamp, #2b45cf); outline-offset: 3px; }"
+    },
+    {
+      "name": "Large Stamp Button",
+      "kind": "button",
+      "refersTo": "button-stamp-lg",
+      "description": "Hero, sheet and appointment-card Book action.",
+      "html": "<a class=\"ds-btn-stamp-lg\" href=\"#\"><span>Book an appointment</span><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></a>",
+      "css": ".ds-btn-stamp-lg { display: inline-flex; align-items: center; gap: 12px; height: 64px; padding: 0 36px; border-radius: 3px; background-color: var(--stamp, #2b45cf); background-image: var(--stamp-speckle, none); background-size: 160px; color: var(--stamp-ink, #fff); font-family: Archivo, system-ui, sans-serif; font-stretch: 78%; font-weight: 700; font-size: 1rem; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; transition: background-color 300ms cubic-bezier(0.22, 1, 0.36, 1), transform 300ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn-stamp-lg:hover { background-color: var(--stamp-deep, #1a2d8f); } .ds-btn-stamp-lg:active { transform: scale(0.965) rotate(-0.8deg); } .ds-btn-stamp-lg:focus-visible { outline: 2px solid var(--stamp, #2b45cf); outline-offset: 3px; }"
+    },
+    {
+      "name": "Ledger Button",
+      "kind": "button",
+      "refersTo": "button-ledger",
+      "description": "Secondary outlined action in ink; takes the stamp on hover.",
+      "html": "<a class=\"ds-btn-ledger\" href=\"#\">Book with Mara</a>",
+      "css": ".ds-btn-ledger { display: inline-flex; align-items: center; height: 44px; padding: 0 16px; border-radius: 3px; border: 1px solid rgb(21 23 26 / 0.8); background: transparent; color: var(--ink, #15171a); font-family: Archivo, system-ui, sans-serif; font-stretch: 78%; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; transition: background-color 200ms, border-color 200ms, color 200ms; } .ds-btn-ledger:hover { border-color: var(--stamp, #2b45cf); background: var(--stamp-wash, #dfe6f5); color: var(--stamp-deep, #1a2d8f); } .ds-btn-ledger:focus-visible { outline: 2px solid var(--stamp, #2b45cf); outline-offset: 3px; }"
+    },
+    {
+      "name": "Index Tabs",
+      "kind": "nav",
+      "refersTo": "index-tab",
+      "description": "Section navigation as ledger index tabs sitting on the header's ink rule.",
+      "html": "<nav class=\"ds-tabs\"><a class=\"ds-tab is-active\" href=\"#\">This week</a><a class=\"ds-tab\" href=\"#\">Services</a><a class=\"ds-tab\" href=\"#\">Team</a><a class=\"ds-tab\" href=\"#\">Visit</a></nav>",
+      "css": ".ds-tabs { display: flex; align-items: flex-end; gap: 4px; border-bottom: 1px solid rgb(21 23 26 / 0.85); padding: 12px 16px 0; background: var(--paper, #f3f5f7); } .ds-tab { position: relative; margin-bottom: -1px; display: flex; align-items: center; height: 40px; padding: 0 16px; border: 1px solid var(--rule-strong, #9fb2c6); border-bottom: 0; border-radius: 5px 5px 0 0; background: var(--paper-deep, #e6e9ee); color: var(--ink-soft, #454a52); font-family: Archivo, system-ui, sans-serif; font-stretch: 78%; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; transition: color 300ms cubic-bezier(0.16, 1, 0.3, 1), background-color 300ms cubic-bezier(0.16, 1, 0.3, 1), border-color 300ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-tab:hover { border-color: rgb(21 23 26 / 0.6); color: var(--ink, #15171a); } .ds-tab.is-active { z-index: 1; border-color: var(--ink, #15171a); background: var(--paper, #f3f5f7); color: var(--ink, #15171a); box-shadow: 0 1px 0 var(--paper, #f3f5f7); } .ds-tab:focus-visible { outline: 2px solid var(--stamp, #2b45cf); outline-offset: 3px; }"
+    },
+    {
+      "name": "Section Head",
+      "kind": "custom",
+      "description": "Double ink rule, ledger headline, short note right-aligned at the baseline.",
+      "html": "<div class=\"ds-section-head\"><span class=\"ds-rule-heavy\"></span><span class=\"ds-rule-thin\"></span><h2>Services</h2><p>Every price is the price you pay. Each square is fifteen minutes in the chair.</p></div>",
+      "css": ".ds-section-head { position: relative; display: grid; grid-template-columns: 7fr 5fr; gap: 20px 48px; align-items: end; padding-top: 20px; background: var(--paper, #f3f5f7); } .ds-rule-heavy { position: absolute; left: 0; right: 0; top: 0; height: 3px; background: var(--ink, #15171a); } .ds-rule-thin { position: absolute; left: 0; right: 0; top: 6px; height: 1px; background: var(--ink, #15171a); } .ds-section-head h2 { margin: 0; font-family: Archivo, system-ui, sans-serif; font-stretch: 68%; font-weight: 780; font-size: clamp(3rem, 7.5vw, 6rem); line-height: 0.88; letter-spacing: -0.02em; text-transform: uppercase; color: var(--ink, #15171a); } .ds-section-head p { margin: 0 0 8px; justify-self: end; max-width: 46ch; font-family: Archivo, system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.625; color: var(--ink-soft, #454a52); }"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "A priced ledger row with duration drawn as 15-minute cells; the whole row books.",
+      "html": "<a class=\"ds-service\" href=\"#\"><span class=\"ds-service-name\">The full appointment<small>Consultation, the complete service and finishing.</small></span><span class=\"ds-cells\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i></i><i></i></span><span class=\"ds-fig\">1 h</span><span class=\"ds-price\">£48</span></a>",
+      "css": ".ds-service { display: grid; grid-template-columns: minmax(0,1fr) auto 5.5rem 7rem; align-items: center; gap: 12px 24px; padding: 24px 12px; border-bottom: 1px solid var(--rule-strong, #9fb2c6); border-radius: 3px; background: var(--paper, #f3f5f7); color: var(--ink, #15171a); text-decoration: none; transition: background-color 300ms; } .ds-service:hover, .ds-service:focus-visible { background: var(--stamp-wash, #dfe6f5); } .ds-service-name { font-family: Archivo, system-ui, sans-serif; font-size: 1.375rem; font-weight: 600; line-height: 1.25; letter-spacing: -0.01em; } .ds-service-name small { display: block; margin-top: 6px; font-size: 0.9375rem; font-weight: 400; line-height: 1.625; color: var(--ink-soft, #454a52); } .ds-cells { display: flex; gap: 3px; } .ds-cells i { width: 14px; height: 14px; border-radius: 1.5px; border: 1px solid rgb(159 178 198 / 0.7); background-image: repeating-linear-gradient(-45deg, var(--hatch, #bfc5cc) 0 1px, transparent 1px 7px); } .ds-cells i.on { border-color: transparent; background: var(--stamp, #2b45cf); transition: background-color 300ms; } .ds-service:hover .ds-cells i.on { background: var(--stamp-deep, #1a2d8f); } .ds-fig, .ds-price { font-family: 'JetBrains Mono', ui-monospace, monospace; letter-spacing: -0.02em; font-variant-numeric: tabular-nums lining-nums; } .ds-fig { font-size: 0.875rem; color: var(--ink-soft, #454a52); } .ds-price { text-align: right; font-size: 1.25rem; font-weight: 600; }"
+    },
+    {
+      "name": "Status Stamp",
+      "kind": "custom",
+      "description": "Tilted OPEN / CLOSED rubber-stamp mark pressed onto the week grid.",
+      "html": "<div class=\"ds-status-stamp\"><span>Open</span><small>until 19:00</small></div>",
+      "css": ".ds-status-stamp { display: inline-block; transform: rotate(-3deg); padding: 8px 12px 6px; border: 3px solid var(--stamp, #2b45cf); border-radius: 6px; color: var(--stamp, #2b45cf); text-align: center; font-family: Archivo, system-ui, sans-serif; -webkit-mask-image: var(--stamp-grain, none); mask-image: var(--stamp-grain, none); -webkit-mask-size: 180px; mask-size: 180px; animation: ds-stamp-in 700ms cubic-bezier(0.22, 1, 0.36, 1) both; } .ds-status-stamp span { display: block; font-stretch: 68%; font-weight: 780; font-size: 2.125rem; line-height: 1; letter-spacing: -0.02em; text-transform: uppercase; } .ds-status-stamp small { display: block; margin-top: 6px; font-stretch: 78%; font-weight: 700; font-size: 0.6875rem; letter-spacing: 0.14em; text-transform: uppercase; } @keyframes ds-stamp-in { 0% { opacity: 0; transform: scale(1.35) rotate(-6deg); } 60% { opacity: 1; transform: scale(0.96) rotate(-2.5deg); } 100% { opacity: 1; transform: scale(1) rotate(-3deg); } } @media (prefers-reduced-motion: reduce) { .ds-status-stamp { animation: none; } }"
+    },
+    {
+      "name": "Week Grid Day",
+      "kind": "custom",
+      "description": "One day column of the week grid: ruled hours, open band, hatched closed time, live now-line on today.",
+      "html": "<div class=\"ds-day\"><div class=\"ds-day-head\">Tue<small>Today</small></div><div class=\"ds-day-body\"><div class=\"ds-band\"><span>10</span><span>19</span></div><div class=\"ds-now\"></div></div></div>",
+      "css": ".ds-day { width: 72px; border: 1px solid var(--ink, #15171a); background: var(--paper, #f3f5f7); font-family: Archivo, system-ui, sans-serif; } .ds-day-head { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 48px; border-bottom: 1px solid var(--ink, #15171a); background: var(--stamp, #2b45cf); color: var(--stamp-ink, #fff); font-stretch: 78%; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; } .ds-day-head small { margin-top: 2px; font-size: 0.6875rem; letter-spacing: 0.12em; opacity: 0.85; } .ds-day-body { position: relative; height: 256px; background-image: linear-gradient(to bottom, transparent calc(2rem - 1px), var(--rule, #d3dde8) calc(2rem - 1px)), repeating-linear-gradient(-45deg, var(--hatch, #bfc5cc) 0 1px, transparent 1px 7px); background-size: 100% 2rem, auto; } .ds-band { position: absolute; left: 0; right: 0; top: 32px; bottom: 32px; display: flex; flex-direction: column; align-items: center; gap: 4px; padding-top: 6px; border-top: 1px solid var(--stamp, #2b45cf); border-bottom: 1px solid var(--stamp, #2b45cf); background: var(--stamp-wash, #dfe6f5); color: var(--stamp-deep, #1a2d8f); font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.6875rem; font-weight: 600; font-variant-numeric: tabular-nums; } .ds-now { position: absolute; left: 0; right: 0; top: 150px; height: 2px; background: var(--stamp, #2b45cf); } .ds-now::before { content: ''; position: absolute; left: -4px; top: 50%; width: 10px; height: 10px; border-radius: 50%; background: var(--stamp, #2b45cf); transform: translateY(-50%); animation: ds-pulse 2.4s ease-out infinite; } @keyframes ds-pulse { 0%, 100% { box-shadow: 0 0 0 0 rgb(43 69 207 / 0.45); } 50% { box-shadow: 0 0 0 6px rgb(43 69 207 / 0); } } @media (prefers-reduced-motion: reduce) { .ds-now::before { animation: none; } }"
+    },
+    {
+      "name": "Appointment Card",
+      "kind": "card",
+      "refersTo": "appointment-card",
+      "description": "The one lifted object: a tilted paper card with blank ruled fields and the Book stamp.",
+      "html": "<div class=\"ds-card-wrap\"><div class=\"ds-card\"><div class=\"ds-card-head\"><strong>Arden Studio</strong><small>Appointment<br>card</small></div><dl><div><dt>Name</dt><dd></dd></div><div><dt>Date</dt><dd></dd></div><div><dt>Time</dt><dd></dd></div></dl><a class=\"ds-card-btn\" href=\"#\">Book an appointment</a></div></div>",
+      "css": ".ds-card-wrap { padding: 40px; background: var(--stamp, #2b45cf); } .ds-card { max-width: 30rem; transform: rotate(-2.5deg); transition: transform 700ms cubic-bezier(0.16, 1, 0.3, 1); padding: 32px; border-radius: 4px; background: var(--paper, #f3f5f7); color: var(--ink, #15171a); font-family: Archivo, system-ui, sans-serif; box-shadow: 0 2px 3px rgb(0 0 0 / 0.18), 0 28px 60px -18px rgb(0 0 0 / 0.55); } .ds-card:hover { transform: rotate(-1deg); } .ds-card-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; padding-bottom: 12px; border-bottom: 3px solid var(--ink, #15171a); } .ds-card-head strong { font-stretch: 68%; font-weight: 780; font-size: 2.25rem; line-height: 0.88; letter-spacing: -0.02em; text-transform: uppercase; } .ds-card-head small, .ds-card dt { font-stretch: 78%; font-weight: 700; font-size: 0.6875rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft, #454a52); } .ds-card dl { margin: 8px 0 0; } .ds-card dl div { display: flex; align-items: flex-end; gap: 16px; height: 3rem; padding-bottom: 6px; border-bottom: 1px solid var(--rule-strong, #9fb2c6); } .ds-card dd { margin: 0; flex: 1; } .ds-card-btn { display: flex; align-items: center; height: 64px; margin-top: 24px; padding: 0 28px; border-radius: 3px; background: var(--stamp, #2b45cf); color: var(--stamp-ink, #fff); font-stretch: 78%; font-weight: 700; font-size: 1rem; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; transition: background-color 300ms; } .ds-card-btn:hover { background: var(--stamp-deep, #1a2d8f); } @media (prefers-reduced-motion: reduce) { .ds-card { transform: none; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Appointment Book",
+    "overview": "Every surface is a page of the shop's own appointment book: cool white ledger stock, graphite ink, pale blue ruling, and one rubber-stamp ink that belongs to the shop. Headings read like printed ledger headers, times and prices are set in tabular mono as if entered in the book, sections are reached through index tabs, closed time is hatched in graphite, and the one action is a stamp you press. Nothing is decorative that a real ledger would not carry.\n\nThe system is a template, not a brand. Its identity lives in the materials (paper, ink, ruling, stamp), never in trade imagery, so any appointment-based personal-care shop can wear it. A new shop changes words, numbers and exactly two colour inputs in `content/shop.ts` (`theme.stamp`, `theme.stampInk`); every other stamp shade is derived from them.\n\nDensity is that of a working document: strong horizontal rules, tight label type, generous display type, flat paper. Motion is ink being laid down, never floating: rules draw themselves in as they scroll into view, the OPEN / CLOSED stamp presses onto the week, the Book button compresses and twists slightly under the thumb, and the \"now\" line on the week grid moves in real time.",
+    "keyCharacteristics": [
+      "Cool white ledger paper with pale blue ruling on a shared 2rem line.",
+      "One saturated colour: the shop's stamp ink, carried by a single token.",
+      "One type family (Archivo) stretched across its width axis for hierarchy; mono only for figures.",
+      "Near-square corners, hard ink rules, flat pages; the one lifted object is the appointment card.",
+      "Hatched graphite marks closed or unavailable time.",
+      "Motion grammar: ink draws, stamps press."
+    ],
+    "rules": [
+      { "name": "The One Ink Rule", "body": "The stamp is the only saturated colour on the page, and it enters through one token. Components reference `stamp`, `stamp-deep`, `stamp-wash` or `stamp-ink`; they never hardcode a brand hex, and they never introduce a second accent.", "section": "colors" },
+      { "name": "The Cool Paper Rule", "body": "Paper is cool white with a blue-grey cast. It is never cream, beige or warm off-white.", "section": "colors" },
+      { "name": "The Hatched Time Rule", "body": "Closed or unavailable time is drawn with graphite hatching, not greyed out with opacity. Hatching means \"the book is shut here\" wherever it appears: week grid, duration cells, team day strips, placeholder frames.", "section": "colors" },
+      { "name": "The Width Axis Rule", "body": "Hierarchy comes from Archivo's width and weight, not from a second display family: 68% for ledger headings, 78% for labels, 92% for the lede, 100% for reading text. Do not add a serif or a script.", "section": "typography" },
+      { "name": "The Figures-in-Mono Rule", "body": "Any number a client reads to decide (time, price, duration, date) is set in the mono figure style. Prose never switches to mono except for these entries.", "section": "typography" },
+      { "name": "The One Grout Rule", "body": "Every ruled surface shares the 2rem ledger line (`--line`). Row heights on ruled surfaces (hero facts, mobile menu entries, card fields, week-grid hours) are multiples of it (1x, 1.5x, 2x), so ruling never drifts between components.", "section": "layout" },
+      { "name": "The Flat Book Rule", "body": "Pages, rows, tabs, grids and buttons never cast shadows. A shadow is reserved for an object that has left the book, and there is one.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do take every brand colour from `theme.stamp` and `theme.stampInk` and derive pressed and wash shades with `color-mix` in oklab.",
+      "Do draw structure with ink rules: 3px + 1px double rule over section heads, 1px ink for frames, 1px rule-strong inside lists and grids.",
+      "Do keep ruled surfaces on the 2rem `--line` and size ruled rows in whole or half multiples of it.",
+      "Do set times, prices, durations and dates in the mono figure style with tabular numerals.",
+      "Do mark closed or unavailable time with graphite hatching.",
+      "Do animate like ink: rules scale in from the left on scroll, stamps press (scale and slight rotation with ease-stamp), and every motion respects `prefers-reduced-motion`.",
+      "Do label placeholder frames honestly (\"Portrait\", numbered gallery captions) until a shop supplies photos."
+    ],
+    "donts": [
+      "Don't return to the category default: a dark full-bleed interior photo, a serif shop name and a gold \"Book Now\".",
+      "Don't use cream, beige or warm paper; the paper is cool white.",
+      "Don't introduce a second saturated colour or hardcode a brand hex in a component.",
+      "Don't put trade imagery (scissors, combs, polish, lashes) in chrome; the template must stay trade-neutral.",
+      "Don't cast shadows from pages, rows, tabs or buttons; only the handed-over appointment card is lifted.",
+      "Don't round controls beyond the near-square scale (1.5-6px); pills are reserved for status dots.",
+      "Don't use floaty fades or rise-in-on-scroll reveals; motion is ink being laid down."
+    ]
+  }
+}

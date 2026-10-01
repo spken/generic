@@ -1,0 +1,123 @@
+{
+  "title": "Choose the visual world",
+  "question": "The roll assigned Glaze & Grout. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Glaze & Grout",
+      "kicker": "THE ROLL",
+      "lineage": "glazed wall tile, terrazzo floors and chrome fixtures shared by every studio",
+      "thesis": "The page is built like the shop's wall: one glazed-tile module, one grout line, one brand glaze color.",
+      "palette": ["#1f5c4a", "#e9e4da", "#c9c3b8", "#15171a", "#d7dadd"],
+      "materials": ["hand-glazed ceramic tile", "terrazzo chip ground", "brushed chrome hardware"],
+      "viewport": "The shop name set large across a wall of glazed tiles, one tile cut out as the live 'next open slot' with a chrome Book button.",
+      "risk": "If the tile grid loosens anywhere it reads as a checkerboard gimmick instead of architecture.",
+      "raised": [
+        {"from": "challenger-teletext", "raise": "Every graphic, image crop and gap is drawn from the same tile cell; the module is sacred."},
+        {"from": "challenger-risograph", "raise": "Total palette commitment: glaze, grout, chrome, ink. Nothing else enters."},
+        {"from": "challenger-understory", "raise": "The brightest element on any screen is always the Book action, nothing competes with it."},
+        {"from": "challenger-rubberhose", "raise": "One grout weight rules every rule, border and divider on the page."}
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "The Appointment Book",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "the paper day-book on the front desk, time slots ruled in pencil",
+      "thesis": "The page is today's page of the book: open slots are the hero, services are the ledger.",
+      "palette": ["#f4f1ea", "#1c1c1c", "#2f4bd8", "#b9b4a8"],
+      "materials": ["ruled ledger paper", "pencil and ink entries", "rubber date stamp"],
+      "viewport": "A ruled day-grid of time slots with the next open ones inked in the brand color, Book beside them.",
+      "risk": "Closest to where most runs land; paper grounds drift toward the cream-and-serif default."
+    },
+    {
+      "id": "challenger-bluenote",
+      "label": "Session Sleeve",
+      "verdict": "competitive",
+      "lineage": "1950s-60s jazz session record sleeves",
+      "thesis": "Every shop gets a record-sleeve: a duotone portrait cropped hard, one flat field of brand color, the name in tight caps at an angle.",
+      "palette": ["#e2682a", "#111111", "#f2efe8"],
+      "materials": ["duotone photography", "flat spot-color field", "tight sans caps"],
+      "viewport": "A hard-cropped duotone portrait in one corner, a full flat brand-color band carrying the shop name and Book.",
+      "case": "Strong audience identification with barbers and stylists; depends heavily on each shop supplying good photography.",
+      "risk": "Nail salons and studios without portrait-grade photos will look empty."
+    },
+    {
+      "id": "challenger-teletext",
+      "label": "Teletext Service",
+      "verdict": "declined",
+      "lineage": "broadcast teletext magazines",
+      "thesis": "Services as numbered pages on a 40-column grid.",
+      "palette": ["#000000", "#ffff00", "#00ffff", "#ffffff"],
+      "materials": ["block mosaic", "bitmap type"],
+      "viewport": "P100 index page listing services and times.",
+      "risk": "Reads as retro novelty to a salon client.",
+      "case": "Loses both axes: clients don't identify with broadcast teletext.",
+      "kept": "The sacred cell: every graphic drawn from one module."
+    },
+    {
+      "id": "challenger-risograph",
+      "label": "Risograph Flyer",
+      "verdict": "declined",
+      "lineage": "riso-printed zines and flyers",
+      "thesis": "The shop as a two-ink riso flyer.",
+      "palette": ["#ff48b0", "#0078bf", "#f2ebdd"],
+      "materials": ["spot ink", "halftone grain"],
+      "viewport": "Misregistered spot-ink name over paper.",
+      "risk": "Paper ground slides into the cream default; too indie for most shops.",
+      "case": "Loses both axes: a flyer is a one-off, not a trusted place.",
+      "kept": "Total palette commitment to a few spot colors."
+    },
+    {
+      "id": "challenger-understory",
+      "label": "Luminescent Understory",
+      "verdict": "declined",
+      "lineage": "alien forest night scenes",
+      "thesis": "Proximity glow as the attention model.",
+      "palette": ["#0b0f0c", "#6ef3e0", "#c8a8ff"],
+      "materials": ["spore glow", "dark loam"],
+      "viewport": "Dark ground, Book blooming to light on approach.",
+      "risk": "Sci-fi mood has nothing to do with personal care.",
+      "case": "Loses both axes.",
+      "kept": "The brightest light is reserved for the focused action."
+    },
+    {
+      "id": "challenger-rubberhose",
+      "label": "Rubber-Hose Cel",
+      "verdict": "declined",
+      "lineage": "1930s rubber-hose animation",
+      "thesis": "The shop as a bouncing cartoon gag.",
+      "palette": ["#111111", "#f5f2ea", "#9a9a9a"],
+      "materials": ["cel ink", "gray wash"],
+      "viewport": "Iris opening onto the shop name.",
+      "risk": "Undercuts trust in the shop's craft.",
+      "case": "Loses both axes.",
+      "kept": "One uniform, confident line weight."
+    },
+    {
+      "id": "challenger-deepdive",
+      "label": "Mesophotic Deep Dive",
+      "verdict": "declined",
+      "lineage": "technical dive profiles",
+      "thesis": "A descent as the page's axis.",
+      "palette": ["#06203a", "#3fd0e0", "#f0f4f7"],
+      "materials": ["depth gradient", "marine snow"],
+      "viewport": "Surface to depth scroll.",
+      "risk": "No relation to the visitor's task.",
+      "case": "Loses both axes. Note: 5 challengers dealt; 3 strongest shown in full, rest here.",
+      "kept": "One axis rules every line of copy."
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code", "toggle": false},
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "The salon template everyone ships, executed impeccably.",
+    "palette": ["#111111", "#ffffff", "#b08d57"],
+    "materials": ["full-bleed interior photo", "serif display", "gold accent"],
+    "viewport": "Dark full-bleed shop photo, centered name, Book Now button, services grid below.",
+    "risk": "Indistinguishable from every other shop's site by design."
+  },
+  "steer": true
+}
